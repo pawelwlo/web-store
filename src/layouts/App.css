@@ -61,11 +61,28 @@ a:-webkit-any-link {
  margin-bottom: 20px;
 }
 
+.cart {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items:normal
+}
 
-
+.img-cart {
+  width: 50px;
+}
 .cartLogo {
   width: 30px;
 }
+
+.cart-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
 
 .navHeader {
   display: flex;
