@@ -26,8 +26,14 @@ function App() {
   }
 
   function removeItem(item) {
-    setCartItems(cartItems.filter((itm) => itm !== item))
+    const index = cartItems.findIndex((itm) => itm === item);
+    if (index !== -1) {
+      const newCartItems = [...cartItems];
+      newCartItems.splice(index, 1);
+      setCartItems(newCartItems);
+    }
   }
+  
 
   const router = createBrowserRouter(
     createRoutesFromElements(
