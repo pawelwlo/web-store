@@ -533,5 +533,28 @@ main  {
     align-items: center;
     justify-content: center;
   }
+
+  .product-card {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 200px;
+    border: solid 1px black;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: small;
+    
+    
+  }
+
+  main  {  
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    background-color: #f6f3f3;
+    text-decoration: none;
+    }
 }
 
