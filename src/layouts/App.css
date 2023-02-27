@@ -57,7 +57,7 @@ a:-webkit-any-link {
 }
 
 .logo {
- max-width: 600px;
+ width: 400px;
  margin-bottom: 20px;
 }
 
@@ -89,8 +89,8 @@ a:-webkit-any-link {
   flex-direction: row;
   width: 30%;
   justify-content: space-around;
+  /* border-bottom: solid 1px; */
   
-
 
   
 }
@@ -118,6 +118,7 @@ header {
   background-color: white;
   border-bottom: solid .5px;
   padding-top: 20px;
+  margin: 20px;
 }
 .App-header {
   
@@ -129,9 +130,9 @@ header {
   justify-content:space-around;
   align-items: center;
   color: black;
-  width: 70%;
+  /* width: 70%; */
  
- border-bottom: solid .5px;
+
   
 }
 
@@ -348,17 +349,17 @@ main  {
  }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* @media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
 
 .App-link {
   color: #61dafb;
 }
-
+/* 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -366,7 +367,7 @@ main  {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .text-ellipsis--2{
   text-overflow:ellipsis;
@@ -460,5 +461,77 @@ main  {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width:320px) and (max-width:800px) {
+  .input {
+    width: 50%;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    background-color: #f7f4f4;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: solid .5px;
+    padding-top: 20px;
+    margin: 20px;
+  }
+  .App-header {
+    
+    background-color: white;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content:space-around;
+    align-items: center;
+    color: black;
+    /* width: 70%; */
+   
+  
+    
+  }
+
+  .nav-link {
+    font-size: medium;
+    font-weight: bolder;
+    margin: 6px 12px;
+    padding: 6px; 
+    text-decoration: none;
+    
+    color: black;
+    /* border-radius: 6px; */
+  }
+  .nav-link:hover {
+  
+  color: rgb(113, 112, 89);
+  
+  }
+
+  .product-card-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid .5px;
+    border-radius: 10px;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    max-width: 900px;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
