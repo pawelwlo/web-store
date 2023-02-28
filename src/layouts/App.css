@@ -298,7 +298,10 @@ color: rgb(141, 53, 120);
 
 
 
-
+.total-price { 
+  color: red;
+  font-weight: bolder;
+}
 
 
 

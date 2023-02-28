@@ -7,8 +7,10 @@ export default function Cart({ product, cartItems, removeItem, cartCounter }) {
       product.setCartItems(product.cartItems - 1);
     }
   }
-  // <td>total price :{data.reduce((total, item)=>total+(item.aprice*item.quantity),0)}</td>
 
+ 
+   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+  
   return (
     <div className='cart'>
       <div className='cart-top'>
@@ -23,14 +25,17 @@ export default function Cart({ product, cartItems, removeItem, cartCounter }) {
             <li className='product-card-cart' key={index}>
               <img className='product-img-cart' src={item.image} alt={item.title} />
               <p className='product-title'>{item.title}</p>
-              <p className='price'>{item.price} $</p>
+              <div className='cart-remove'><p className='price'>{item.price.toFixed(2)} $</p>
               <div></div>
               <button className='removeButton' onClick={() => removeItem(item)}>
                 remove
-              </button>
+              </button></div>
+              
             </li>
-            
           ))}
+          <p className='total-price'>
+            Total price: {totalPrice.toFixed(2)} $
+          </p>
         </ul>
       ) : (
         <div className='cart-bottom'>
@@ -43,3 +48,4 @@ export default function Cart({ product, cartItems, removeItem, cartCounter }) {
     </div>
   );
 }
+
