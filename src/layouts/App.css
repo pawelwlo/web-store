@@ -482,7 +482,13 @@ main  {
 
 @media screen and (min-width:320px) and (max-width:1000px) {
 
-  
+  .logo {
+    width: 300px;
+    margin-bottom: 20px;
+    /* box-shadow: 1px 1px 1px 1px rgb(195, 134, 110); */
+    border-radius: 10px;
+   }
+
   .input {
     width: 50%;
     height: 30px;
