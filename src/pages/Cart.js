@@ -7,6 +7,7 @@ export default function Cart({ product, cartItems, removeItem, cartCounter }) {
       product.setCartItems(product.cartItems - 1);
     }
   }
+  // <td>total price :{data.reduce((total, item)=>total+(item.aprice*item.quantity),0)}</td>
 
   return (
     <div className='cart'>
@@ -28,6 +29,7 @@ export default function Cart({ product, cartItems, removeItem, cartCounter }) {
                 remove
               </button>
             </li>
+            
           ))}
         </ul>
       ) : (
