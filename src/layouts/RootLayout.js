@@ -28,7 +28,7 @@ function RootLayout ({cartCounter}) {
         
         <NavLink className='nav-link' to="/" >Home</NavLink>
           <NavLink className='nav-link' to="about" >About</NavLink>
-          <NavLink className='nav-link' to="contact">Contact us</NavLink>
+          <NavLink className='nav-link' to="contact">Contact</NavLink>
           
             <NavLink className="nav-link" to='cart' > <span >{cartCounter}<br></br> <img className='cartLogo' src='./cart.png'></img></span> 
           </NavLink>
