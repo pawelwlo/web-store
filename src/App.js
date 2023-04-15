@@ -19,7 +19,7 @@ import ProductPage from './pages/Product.js'
 function App() {
   const [cartItems, setCartItems] = useState([])
   
-  // const [cartCounter, setCartCounter] = useState(0);
+  
 
   function addItem(item) {
     setCartItems([ ...cartItems, item  ])

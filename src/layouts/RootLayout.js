@@ -16,7 +16,7 @@ function RootLayout ({cartCounter}) {
   
       <header className='header' >
         <div className="App-header">
-        <NavLink to="/"><img src="./Logo-web-store.png" className='logo'></img></NavLink> 
+        <NavLink to="/"><img src="./logo-slim.png" className='logo'></img></NavLink> 
         
         
         </div>

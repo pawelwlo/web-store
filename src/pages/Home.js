@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import { json, NavLink } from 'react-router-dom';
-import Cart from './Cart';
 import ProductCard from '../components/ProductCard'
 
 
